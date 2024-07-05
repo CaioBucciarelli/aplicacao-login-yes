@@ -1,0 +1,155 @@
+.section-redefinir {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.section-redefinir-conteudo {
+  width: 80%;
+  height: 90%;
+  padding: 60px;
+  background: var(--branco);
+  border-radius: 100px;
+  border: 1px solid var(--cinza-borda);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--azul);
+    margin-bottom: 60px;
+  }
+  form {
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-cancelar { 
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--azul);
+    border: 1px solid var(--azul);
+    border-radius: 8px;
+    width: 30%;
+    padding: 16px 0px;
+    text-align: center;
+    transition: .3s;
+  }
+  .link-cancelar:hover {
+    background: var(--azul);
+    color: var(--branco);
+  }
+}
+
+.infos-senha-nova ul li div {
+  background: var(--vermelho);
+}
+
+.single-input-redefinir {
+  position: relative;
+  width: 50%;
+}
+
+div.single-input-redefinir:nth-child(2) {
+  margin-bottom: 120px;
+} 
+
+.infos-senha-nova, 
+.infos-senha-confirmar{
+  background: var(--branco);
+  width: 350px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: -360px;
+  display: none;
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid var(--cinza-muito-claro);
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, .5);
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cinza-escuro);
+    margin-bottom: 12px;
+  }
+  ul li {
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  ul li div {
+    display: inline-block;
+    background: var(--vermelho);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+}
+
+.single-input-redefinir-nova-senha {
+  margin-bottom: 40px;
+}
+
+.single-input-redefinir-nova-senha:focus-within .infos-senha-nova,
+.single-input-redefinir-confirmar-senha:focus-within .infos-senha-confirmar {
+  display: flex;
+}
+
+.btn-redefinir {
+  width: 30% !important;
+}
+
+@media (max-width: 1000px) {
+  .section-redefinir-conteudo h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+  .btn-redefinir,
+  .section-redefinir-conteudo .link-cancelar {
+    width: 60% !important;
+  }
+  .single-input-redefinir {
+    width: 80%;
+  }
+  div.single-input-redefinir:nth-child(2) {
+    margin-bottom: 60px;
+  }
+  .infos-senha-nova, 
+  .infos-senha-confirmar{
+    width: 350px;
+    top: 60px;
+    right: 0px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-redefinir-conteudo h1 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .btn-redefinir,
+  .section-redefinir-conteudo .link-cancelar {
+    width: 80% !important;
+  }
+  .single-input-redefinir {
+    width: 100%;
+  }
+}
