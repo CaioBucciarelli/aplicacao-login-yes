@@ -5,7 +5,8 @@ import imgFundo2 from '../../../public/img-fundo-2.png';
 import {useState} from 'react'
 import { Link } from 'react-router-dom';
 import {validarEmail, validarSenha} from '../../utils/validadores.tsx'
-import CardSucessoLogin from '../../components/card-sucesso-login.tsx'
+import CardSucessoLogin from '../../components/card-sucesso-login'
+import CardSucessoRedefinir from '../../components/card-sucesso-redefinir'
 import './style.css';
 
 function Login() {
@@ -89,6 +90,7 @@ function Login() {
         <img src={Logo} alt="Logo" /> 
       </div>
       <CardSucessoLogin/>
+      <CardSucessoRedefinir/>
       <img src={imgFundo1} alt="imagem de fundo transparente" className='img-fundo-1' />
       <img src={imgFundo2} alt="imagem de fundo transparente" className='img-fundo-2'/>
     </section>
