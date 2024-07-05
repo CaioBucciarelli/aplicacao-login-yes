@@ -1,0 +1,140 @@
+.section-login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+.section-login-conteudo {
+  background: var(--branco);
+  border-radius: 100px;
+  border: 1px solid var(--cinza-borda);
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--azul);
+  }
+  form {
+    margin-top: 110px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  a {
+    color: var(--azul-claro);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 32px;
+  }
+  p {
+    margin-top: 95px;
+    max-width: 40ch;
+    span {
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}
+
+.single-input-login {
+  width: 100%;
+}
+
+.single-input-login:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.single-input-login:nth-child(2) {
+  margin-bottom: 80px;
+}
+
+.input-senha{
+  display: flex;
+}
+
+.input-senha .single-input {
+  width: 100%;
+}
+
+.input-senha .single-input .input {
+  border-right: none;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.msg-erro {
+  position: absolute;
+  top: 122px;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  background: var(--vermelho);
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--branco);
+  border-radius: 4px;
+  padding: 8px 20px;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, .5);
+  img {
+    width: 40px;
+  }
+  p {
+    margin: 0 !important;
+  }
+}
+
+div.single-input .input-err {
+  border: 1px solid var(--vermelho);
+}
+
+div.single-input .input-err + label {
+  color: var(--vermelho);
+}
+
+@media (max-width: 1200px) {
+  .section-login .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-login-conteudo {
+    padding: 60px;
+  }
+  .section-login-conteudo h1 {
+    font-size: 40px;
+  }
+  .section-login-conteudo form {
+    margin-top: 60px;
+  }
+  .single-input-login:nth-child(2) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-login-conteudo {
+    padding: 40px;
+  }
+  .section-login-conteudo form .single-input-login {
+    width: 80%;
+  }
+  .section-login-conteudo form button {
+    width: 80%;
+  }
+  .section-login-conteudo p {
+    margin-top: 60px;
+    text-align: center;
+    max-width: 40ch;
+  }
+  .msg-erro {
+    width: 80%;
+  }
+}

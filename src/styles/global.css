@@ -1,0 +1,161 @@
+:root {
+  --preto: #000;
+  --branco: #fff;
+  --cinza: #7B7B7B;
+  --cinza-fraco: #6D6D6D;
+  --cinza-claro: #ABACA5;
+  --cinza-muito-claro: #F1F1F1;
+  --cinza-escuro: #333;
+  --cinza-borda: #D6D7D4;
+  --azul: #183859;
+  --azul-claro: #116FDD;
+  --verde-claro: #CDF7D4;
+  --verde: #00C65E;
+  --vermelho: #F42323;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  list-style: none;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  background: var(--azul);
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  width: 100vw;
+  height: 500px;
+  display: block;
+  position: absolute;
+  border-radius: 20px;
+  top: calc(50% - 250px);
+  background: var(--verde-claro);
+  z-index: -1;
+}
+
+.container .img-fundo-1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 96%;
+  z-index: -2;
+}
+
+.container .img-fundo-2 {
+  position: absolute;
+  top: -20px;
+  right: -100px;
+  width: 50%;
+  height: 100%;
+  z-index: -2;
+}
+
+div.single-input {
+  position: relative;
+}
+
+div.single-input label {
+  font-size: 20px;
+  position: absolute;
+  left: 12px;
+  bottom: 14px;
+  color: var(--cinza);
+  cursor: text;
+  transition: .3s ease-in-out;
+}
+
+div.single-input .input {
+  border-radius: 4px;
+  width: 100%;
+  padding: 12px;
+  color: var(--cinza);
+  border: 1px solid var(--cinza);
+  outline: 0;
+  font-size: 20px;
+}
+
+.single-input .input:focus ~ label,
+.single-input .input:valid ~ label {
+  transform: translateY(-26px);
+  font-size: 16px;
+  background: var(--branco);
+  padding: 0px 8px;
+  font-weight: 700;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  background-color: var(--verde);
+  padding: 20px 0px;
+  color: var(--branco);
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background: var(--cinza-claro);
+  cursor: default;
+  transition: .3s;
+  cursor: not-allowed;
+}
+
+.bi {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--cinza);
+  border-left: none;
+  background: transparent;
+  padding: 0px 8px;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+
+.card-sucesso-login {
+  display: none;
+}
+
+.cards{
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 20px 60px 20px 20px;
+  background: var(--verde);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--branco);
+}
+
+.cards img {
+  width: 40px;
+}
+
+.cards button {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.cards button img {
+  width: 15px;
+}
