@@ -1,30 +1,28 @@
-# React + TypeScript + Vite
+# Projeto: Tela de login responsiva, como possibilidade de recuperar e redefinir senha
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi feito em REACT, com intúito de realizar o login na plataforma, caso coloque o login errado, é notificado e vice e versa. Usei a biblioteca Bootstrap para ícones do input (ver a senha) e o google fonts para utilizar a font Rubik.
 
-Currently, two official plugins are available:
+## Sumário
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Instruções de Uso](#instruções-de-uso)
+- [Autor](#autores)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ⚙️ Instruções de Uso
 
-- Configure the top-level `parserOptions` property like this:
+1. **Baixando Dependências:**
+   - Abra o terminal e para baixar todas as dependências escreva:
+    ```sh
+    npm install
+    ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. **Rodando o Código:**
+   - Para rodar o código, abra o terminal e escreva: 
+    ```sh
+    npm run dev
+    ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## ✒️ Autor
+
+* **Caio Bucciarelli** - [CaioBucciarelli](https://github.com/CaioBucciarelli)
