@@ -1,4 +1,4 @@
-# Projeto: Tela de login responsiva, como possibilidade de recuperar e redefinir senha
+# Projeto: Tela de login responsiva, com possibilidade de recuperar e redefinir senha
 
 Este projeto foi feito em REACT, com intúito de realizar o login na plataforma, caso coloque o login errado, é notificado e vice e versa. Usei a biblioteca Bootstrap para ícones do input (ver a senha) e o google fonts para utilizar a font Rubik.
 
